@@ -1,0 +1,50 @@
+.about-quote {
+  background: url('../images/about-quote.jpg') center/cover no-repeat;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 200px 10%;
+  color: $white;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.3;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: rgba(#000, 0.8);
+  }
+
+  &__text {
+    margin: 0 auto;
+    max-width: 1130px;
+  }
+
+  @include media-breakpoint-down(xxl) {
+    font-size: 30px;
+    padding: 120px 10%;
+
+    &__text {
+      max-width: 900px;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    font-size: 20px;
+    padding: 100px 20px;
+  }
+}
+
+.about-content {
+  font-size: 16px;
+
+  @include media-breakpoint-down(xxl) {
+    font-size: 14px;
+  }
+}

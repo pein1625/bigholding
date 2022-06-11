@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <!-- Styles-->
+        <link rel="stylesheet" type="text/css" href="./css/libs.css" />
+        <link rel="stylesheet" type="text/css" href="./vendor/fontawesome-pro/css/all.min.css" />
+        <link rel="stylesheet" type="text/css" href="./css/app.css" />
+        <!-- Scripts-->
+        <script src="./js/libs.js" defer="defer"></script>
+        <script src="./js/app.js" defer="defer"></script>
+    </head>
+    <body>
+        <div class="page">
+            <!-- header-->
+            <header class="header">
+                <div class="header__wrapper">
+                    <div class="container">
+                        <div class="header__inner"><a class="header__logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                            <div class="header__elements">
+                                <section class="navbar js-navbar">
+                                    <div class="navbar__backdrop js-navbar-toggle"></div>
+                                    <div class="navbar__wrapper">
+                                        <div class="navbar__header"><a class="navbar__logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                                            <button class="btn-toggle js-navbar-toggle ms-auto"></button>
+                                        </div>
+                                        <div class="navbar__body">
+                                            <ul class="menu menu-root">
+                                                <li class="menu-item"><a class="menu-link active" href="./index.html">Trang chủ</a>
+                                                </li>
+                                                <li class="menu-item menu-item-group"><a class="menu-link" href="./about.html">Giới thiệu</a><span class="menu-toggle"></span>
+                                                    <ul class="menu menu-sub">
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Dropdown</a><span class="menu-toggle"></span>
+                                                            <ul class="menu menu-sub menu-sub-2">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./projects.html">Lĩnh vực hoạt động</a>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./news.html">Tin tức</a>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./recruit.html">Tuyển dụng</a>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./contact.html">Liên hệ</a>
+                                                </li>
+                                            </ul>
+                                            <ul class="h-social">
+                                                <li><a href="#!"><i class="fab fa-fw fa-facebook-f"></i></a></li>
+                                                <li><a href="#!"><i class="fab fa-fw fa-instagram"></i></a></li>
+                                                <li><a href="#!"><i class="fab fa-fw fa-youtube"></i></a></li>
+                                                <li><a href="#!"><i class="fab fa-fw fa-twitter"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                                <form class="search">
+                                    <div class="input-group">
+                                        <input class="form-control" type="text" placeholder="Tìm kiếm..." />
+                                        <button class="input-group-text" type="submit"><i class="far fa-search"></i></button>
+                                        <button class="input-group-text search__close" type="button"><i class="fal fa-times"></i></button>
+                                    </div>
+                                </form>
+                                <nav class="lang ms-xl-50"><a href="#!"><img src="./images/vn.svg" alt="" /></a><a href="#!"><img src="./images/gb.svg" alt="" /></a></nav>
+                                <button class="search-btn ms-2 ms-xl-0" type="button"><i class="fal fa-search"></i></button>
+                                <button class="btn-toggle d-xl-none js-navbar-toggle ms-2"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="page__content">
+                <!-- main content--><img class="d-block w-100" src="./images/banner-recruit.jpg" alt="">
+                <div class="container py-60 py-xl-80">
+                    <div class="row g-30 gx-xl-40">
+                        <div class="col-lg-3">
+                            <form class="recruit-search mb-2 d-lg-none" action="">
+                                <div class="input-group">
+                                    <input class="form-control" type="text" placeholder="Bạn đang tìm kiếm công việc gì?">
+                                    <button class="input-group-text"><i class="fal fa-search"></i></button>
+                                </div>
+                            </form>
+                            <form class="filter">
+                                <button class="filter__btn button mb-2 d-lg-none" type="button"><i class="fal fa-filter me-2"></i>Filter</button>
+                                <div class="filter__box">
+                                    <h3 class="filter__label">Loại công việc</h3>
+                                    <div class="mt-1">
+                                        <label class="checkbox-styled">
+                                            <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span><span>Toàn thời gian</span>
+                                        </label>
+                                    </div>
+                                    <div class="mt-1">
+                                        <label class="checkbox-styled">
+                                            <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span><span>Bán thời gian</span>
+                                        </label>
+                                    </div>
+                                    <h3 class="filter__label">Cấp bậc</h3>
+                                    <div class="mt-1">
+                                        <label class="checkbox-styled">
+                                            <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span><span>Quản lý</span>
+                                        </label>
+                                    </div>
+                                    <div class="mt-1">
+                                        <label class="checkbox-styled">
+                                            <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span><span>Nhân viên chính thức</span>
+                                        </label>
+                                    </div>
+                                    <div class="mt-1">
+                                        <label class="checkbox-styled">
+                                            <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span><span>Cộng tác viên</span>
+                                        </label>
+                                    </div>
+                                    <div class="mt-1">
+                                        <label class="checkbox-styled">
+                                            <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span><span>Thực tập sinh</span>
+                                        </label>
+                                    </div>
+                                    <h3 class="filter__label">Ngành nghề</h3>
+                                    <div class="mt-1">
+                                        <label class="checkbox-styled">
+                                            <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span><span>Bán hàng - Kinh doanh</span>
+                                        </label>
+                                    </div>
+                                    <div class="mt-1">
+                                        <label class="checkbox-styled">
+                                            <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span><span>Hành chính - Nhân sự</span>
+                                        </label>
+                                    </div>
+                                    <div class="mt-1">
+                                        <label class="checkbox-styled">
+                                            <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span><span>Marketing</span>
+                                        </label>
+                                    </div>
+                                    <div class="mt-1">
+                                        <label class="checkbox-styled">
+                                            <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span><span>Kế toán - Tài chính</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-9">
+                            <form class="recruit-search d-none d-lg-block mb-40" action="">
+                                <div class="input-group">
+                                    <input class="form-control" type="text" placeholder="Bạn đang tìm kiếm công việc gì?">
+                                    <button class="input-group-text"><i class="fal fa-search"></i></button>
+                                </div>
+                            </form>
+                            <div class="mb-20">
+                                <div class="recruit">
+                                    <div class="row gx-30 gy-3 align-items-center">
+                                        <div class="col-md-auto"><a class="recruit__frame" href="./recruit-detail.html"><img src="./images/recruit-img.jpg" alt="" /></a></div>
+                                        <div class="col-md">
+                                            <h3 class="recruit__title"><a href="./recruit-detail.html">Nhân viên chăm sóc khách hàng</a></h3>
+                                            <div class="recruit__info">
+                                                <div class="row gx-2 mt-1">
+                                                    <div class="col-auto"><i class="fal fa-fw fa-usd-circle"></i></div>
+                                                    <div class="col">Thỏa thuận</div>
+                                                </div>
+                                            </div>
+                                            <div class="recruit__info">
+                                                <div class="row gx-2 mt-1">
+                                                    <div class="col-auto"><i class="fal fa-fw fa-map-marker-alt"></i></div>
+                                                    <div class="col">Quận Thanh Xuân, hà Nội</div>
+                                                </div>
+                                            </div>
+                                            <div class="recruit__info">
+                                                <div class="row gx-2 mt-1">
+                                                    <div class="col-auto"><i class="fal fa-fw fa-clock"></i></div>
+                                                    <div class="col">Hạn nộp hồ sơ: 05/06/2022</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-auto"><a class="button" href="./recruit-detail.html">XEM CHI TIẾT</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-20">
+                                <div class="recruit">
+                                    <div class="row gx-30 gy-3 align-items-center">
+                                        <div class="col-md-auto"><a class="recruit__frame" href="./recruit-detail.html"><img src="./images/recruit-img.jpg" alt="" /></a></div>
+                                        <div class="col-md">
+                                            <h3 class="recruit__title"><a href="./recruit-detail.html">Nhân viên chăm sóc khách hàng</a></h3>
+                                            <div class="recruit__info">
+                                                <div class="row gx-2 mt-1">
+                                                    <div class="col-auto"><i class="fal fa-fw fa-usd-circle"></i></div>
+                                                    <div class="col">Thỏa thuận</div>
+                                                </div>
+                                            </div>
+                                            <div class="recruit__info">
+                                                <div class="row gx-2 mt-1">
+                                                    <div class="col-auto"><i class="fal fa-fw fa-map-marker-alt"></i></div>
+                                                    <div class="col">Quận Thanh Xuân, hà Nội</div>
+                                                </div>
+                                            </div>
+                                            <div class="recruit__info">
+                                                <div class="row gx-2 mt-1">
+                                                    <div class="col-auto"><i class="fal fa-fw fa-clock"></i></div>
+                                                    <div class="col">Hạn nộp hồ sơ: 05/06/2022</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-auto"><a class="button" href="./recruit-detail.html">XEM CHI TIẾT</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-20">
+                                <div class="recruit">
+                                    <div class="row gx-30 gy-3 align-items-center">
+                                        <div class="col-md-auto"><a class="recruit__frame" href="./recruit-detail.html"><img src="./images/recruit-img.jpg" alt="" /></a></div>
+                                        <div class="col-md">
+                                            <h3 class="recruit__title"><a href="./recruit-detail.html">Nhân viên chăm sóc khách hàng</a></h3>
+                                            <div class="recruit__info">
+                                                <div class="row gx-2 mt-1">
+                                                    <div class="col-auto"><i class="fal fa-fw fa-usd-circle"></i></div>
+                                                    <div class="col">Thỏa thuận</div>
+                                                </div>
+                                            </div>
+                                            <div class="recruit__info">
+                                                <div class="row gx-2 mt-1">
+                                                    <div class="col-auto"><i class="fal fa-fw fa-map-marker-alt"></i></div>
+                                                    <div class="col">Quận Thanh Xuân, hà Nội</div>
+                                                </div>
+                                            </div>
+                                            <div class="recruit__info">
+                                                <div class="row gx-2 mt-1">
+                                                    <div class="col-auto"><i class="fal fa-fw fa-clock"></i></div>
+                                                    <div class="col">Hạn nộp hồ sơ: 05/06/2022</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-auto"><a class="button" href="./recruit-detail.html">XEM CHI TIẾT</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-20">
+                                <div class="recruit">
+                                    <div class="row gx-30 gy-3 align-items-center">
+                                        <div class="col-md-auto"><a class="recruit__frame" href="./recruit-detail.html"><img src="./images/recruit-img.jpg" alt="" /></a></div>
+                                        <div class="col-md">
+                                            <h3 class="recruit__title"><a href="./recruit-detail.html">Nhân viên chăm sóc khách hàng</a></h3>
+                                            <div class="recruit__info">
+                                                <div class="row gx-2 mt-1">
+                                                    <div class="col-auto"><i class="fal fa-fw fa-usd-circle"></i></div>
+                                                    <div class="col">Thỏa thuận</div>
+                                                </div>
+                                            </div>
+                                            <div class="recruit__info">
+                                                <div class="row gx-2 mt-1">
+                                                    <div class="col-auto"><i class="fal fa-fw fa-map-marker-alt"></i></div>
+                                                    <div class="col">Quận Thanh Xuân, hà Nội</div>
+                                                </div>
+                                            </div>
+                                            <div class="recruit__info">
+                                                <div class="row gx-2 mt-1">
+                                                    <div class="col-auto"><i class="fal fa-fw fa-clock"></i></div>
+                                                    <div class="col">Hạn nộp hồ sơ: 05/06/2022</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-auto"><a class="button" href="./recruit-detail.html">XEM CHI TIẾT</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-20">
+                                <div class="recruit">
+                                    <div class="row gx-30 gy-3 align-items-center">
+                                        <div class="col-md-auto"><a class="recruit__frame" href="./recruit-detail.html"><img src="./images/recruit-img.jpg" alt="" /></a></div>
+                                        <div class="col-md">
+                                            <h3 class="recruit__title"><a href="./recruit-detail.html">Nhân viên chăm sóc khách hàng</a></h3>
+                                            <div class="recruit__info">
+                                                <div class="row gx-2 mt-1">
+                                                    <div class="col-auto"><i class="fal fa-fw fa-usd-circle"></i></div>
+                                                    <div class="col">Thỏa thuận</div>
+                                                </div>
+                                            </div>
+                                            <div class="recruit__info">
+                                                <div class="row gx-2 mt-1">
+                                                    <div class="col-auto"><i class="fal fa-fw fa-map-marker-alt"></i></div>
+                                                    <div class="col">Quận Thanh Xuân, hà Nội</div>
+                                                </div>
+                                            </div>
+                                            <div class="recruit__info">
+                                                <div class="row gx-2 mt-1">
+                                                    <div class="col-auto"><i class="fal fa-fw fa-clock"></i></div>
+                                                    <div class="col">Hạn nộp hồ sơ: 05/06/2022</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-auto"><a class="button" href="./recruit-detail.html">XEM CHI TIẾT</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <nav class="mt-40">
+                                <ul class="pagination">
+                                    <li class="page-item disabled me-auto"><a class="page-link text-primary font-size-base" href="#!"><i class="fas fa-arrow-left"></i><span class="d-none d-md-inline ms-2">Trang trước</span></a></li>
+                                    <li class="page-item active"><a class="page-link" href="#!">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#!">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#!">5</a></li>
+                                    <li class="page-item ms-auto"><a class="page-link text-primary font-size-base" href="#!"><span class="d-none d-md-inline me-2">Trang sau</span><i class="fas fa-arrow-right"></i></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <section class="subscribe-form">
+                        <div class="row g-30 gx-xl-60 gx-xxl-80">
+                            <div class="col-lg-6">
+                                <h2 class="subscribe-form__title">ĐĂNG KÝ<br>NHẬN TIN TUYỂN DỤNG TỪ CHÚNG TÔI</h2>
+                                <div class="subscribe-form__desc">Lorem ipsum dolor sit amet, con sec tetur adipiscing elit. Nullam nec ante ac mi pellen tesque pulvinar. Donec rhon cus tempus tellus a venenatis.</div>
+                                <div class="row g-3">
+                                    <div class="col-md-5">
+                                        <div class="subscribe-form__contact">
+                                            <div class="row align-items-center g-3">
+                                                <div class="col-auto"><i class="fas fa-lg fa-fw fa-phone-square text-primary"></i></div>
+                                                <div class="col"><a href="tel:024.9999.8900">024.9999.8900</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="subscribe-form__contact">
+                                            <div class="row align-items-center g-3">
+                                                <div class="col-auto"><i class="fas fa-lg fa-fw fa-envelope text-primary"></i></div>
+                                                <div class="col"><a href="mailto:tuyendung@bigholding.com.vn">tuyendung@bigholding.com.vn</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <form class="form" action="#!">
+                                    <div class="row gx-30 gy-3">
+                                        <div class="col-12">
+                                            <input class="form-control" type="text" placeholder="Họ và tên*" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input class="form-control" type="text" placeholder="Địa chỉ email*" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input class="form-control" type="text" placeholder="Số điện thoại*" required>
+                                        </div>
+                                        <div class="col-12 text-end">
+                                            <button class="button" type="submit">Đăng ký</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- footer-->
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 mb-20"><a class="footer__logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                            <ul class="f-contact mt-3 mt-xl-4">
+                                <li class="f-contact__item">
+                                    <div class="row g-3">
+                                        <div class="col-auto"><i class="fas fa-lg fa-fw fa-phone-square text-primary"></i></div>
+                                        <div class="col"><a href="tel:+84981045948">+ 84 981 045 948</a></div>
+                                    </div>
+                                </li>
+                                <li class="f-contact__item">
+                                    <div class="row g-3">
+                                        <div class="col-auto"><i class="fas fa-lg fa-fw fa-envelope text-primary"></i></div>
+                                        <div class="col"><a href="mailto:info@bigholding.vn">info@bigholding.vn</a></div>
+                                    </div>
+                                </li>
+                                <li class="f-contact__item">
+                                    <div class="row g-3">
+                                        <div class="col-auto"><i class="fas fa-lg fa-fw fa-home text-primary"></i></div>
+                                        <div class="col">Lô số 22, tầng 1 tòa R4 Royal City, số 72 Nguyễn Trãi, Phường Thượng Đình, Quận Thanh Xuân, Thành phố Hà Nội, Việt Nam.</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 mb-20">
+                            <form class="subscribe mb-4 mb-xl-40" action="#!">
+                                <h3 class="subscribe__title">Đăng ký nhận tin</h3>
+                                <div class="subscribe__group">
+                                    <div class="input-group">
+                                        <input class="form-control" type="email" placeholder="Email" />
+                                        <button class="input-group-text">Đăng ký</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="row g-3">
+                                <div class="col-6">
+                                    <ul class="f-menu">
+                                        <li><a href="#!">Trang chủ</a></li>
+                                        <li><a href="#!">Giới thiệu tập đoàn</a></li>
+                                        <li><a href="#!">Lĩnh vực hoạt động</a></li>
+                                        <li><a href="#!">Dự án tiêu biểu</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <ul class="f-menu">
+                                        <li><a href="#!">Tin tức sự kiện</a></li>
+                                        <li><a href="#!">Tuyển dụng</a></li>
+                                        <li><a href="#!">Liên hệ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__copyright">© Bản quyền thuộc Big Holding 2022</div>
+                </div>
+            </footer>
+        </div>
+        <!-- modals + sticky widgets-->
+        <button class="btn-movetop" type="button" data-target="body"><i class="fa fa-arrow-up"></i></button>
+    </body>
+</html>

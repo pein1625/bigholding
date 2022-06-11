@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <!-- Styles-->
+        <link rel="stylesheet" type="text/css" href="./css/libs.css" />
+        <link rel="stylesheet" type="text/css" href="./vendor/fontawesome-pro/css/all.min.css" />
+        <link rel="stylesheet" type="text/css" href="./css/app.css" />
+        <!-- Scripts-->
+        <script src="./js/libs.js" defer="defer"></script>
+        <script src="./js/app.js" defer="defer"></script>
+    </head>
+    <body>
+        <div class="page">
+            <!-- header-->
+            <header class="header">
+                <div class="header__wrapper">
+                    <div class="container">
+                        <div class="header__inner"><a class="header__logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                            <div class="header__elements">
+                                <section class="navbar js-navbar">
+                                    <div class="navbar__backdrop js-navbar-toggle"></div>
+                                    <div class="navbar__wrapper">
+                                        <div class="navbar__header"><a class="navbar__logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                                            <button class="btn-toggle js-navbar-toggle ms-auto"></button>
+                                        </div>
+                                        <div class="navbar__body">
+                                            <ul class="menu menu-root">
+                                                <li class="menu-item"><a class="menu-link active" href="./index.html">Trang chủ</a>
+                                                </li>
+                                                <li class="menu-item menu-item-group"><a class="menu-link" href="./about.html">Giới thiệu</a><span class="menu-toggle"></span>
+                                                    <ul class="menu menu-sub">
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Dropdown</a><span class="menu-toggle"></span>
+                                                            <ul class="menu menu-sub menu-sub-2">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./projects.html">Lĩnh vực hoạt động</a>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./news.html">Tin tức</a>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./recruit.html">Tuyển dụng</a>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./contact.html">Liên hệ</a>
+                                                </li>
+                                            </ul>
+                                            <ul class="h-social">
+                                                <li><a href="#!"><i class="fab fa-fw fa-facebook-f"></i></a></li>
+                                                <li><a href="#!"><i class="fab fa-fw fa-instagram"></i></a></li>
+                                                <li><a href="#!"><i class="fab fa-fw fa-youtube"></i></a></li>
+                                                <li><a href="#!"><i class="fab fa-fw fa-twitter"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                                <form class="search">
+                                    <div class="input-group">
+                                        <input class="form-control" type="text" placeholder="Tìm kiếm..." />
+                                        <button class="input-group-text" type="submit"><i class="far fa-search"></i></button>
+                                        <button class="input-group-text search__close" type="button"><i class="fal fa-times"></i></button>
+                                    </div>
+                                </form>
+                                <nav class="lang ms-xl-50"><a href="#!"><img src="./images/vn.svg" alt="" /></a><a href="#!"><img src="./images/gb.svg" alt="" /></a></nav>
+                                <button class="search-btn ms-2 ms-xl-0" type="button"><i class="fal fa-search"></i></button>
+                                <button class="btn-toggle d-xl-none js-navbar-toggle ms-2"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="page__content">
+                <!-- main content-->
+                <div class="banner-slider">
+                    <div class="banner-slider__container swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="banner-slider__frame"><img src="./images/banner-slide-1.jpg" alt="" /></div>
+                                <div class="banner-slider__content">
+                                    <div class="banner-slider__title">GÓP PHẦN ĐƯA VIỆT NAM<br />TRỞ NÊN VĨ ĐẠI</div><a class="button" href="#!">Liên hệ</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="banner-slider__frame"><img src="./images/banner-slide-2.jpg" alt="" /></div>
+                                <div class="banner-slider__content">
+                                    <div class="banner-slider__title">GÓP PHẦN ĐƯA VIỆT NAM<br />TRỞ NÊN VĨ ĐẠI</div><a class="button" href="./contact.html">Liên hệ</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="banner-slider__frame"><img src="./images/banner-slide-1.jpg" alt="" /></div>
+                                <div class="banner-slider__content">
+                                    <div class="banner-slider__title">GÓP PHẦN ĐƯA VIỆT NAM<br />TRỞ NÊN VĨ ĐẠI</div><a class="button" href="#!">Liên hệ</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="banner-slider__frame"><img src="./images/banner-slide-2.jpg" alt="" /></div>
+                                <div class="banner-slider__content">
+                                    <div class="banner-slider__title">GÓP PHẦN ĐƯA VIỆT NAM<br />TRỞ NÊN VĨ ĐẠI</div><a class="button" href="./contact.html">Liên hệ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner-slider__nav">
+                            <div class="banner-slider__prev"><img src="./images/icon-long-arrow-left.png" alt="" /></div>
+                            <div class="banner-slider__next"><img src="./images/icon-long-arrow-right.png" alt="" /></div>
+                            <div class="banner-slider__pagination ms-auto"></div>
+                        </div>
+                    </div>
+                </div>
+                <section class="section-2">
+                    <div class="container">
+                        <div class="section-2__header">
+                            <div class="row align-items-end">
+                                <div class="col-sm">
+                                    <h2 class="section-2__title mb-0">TIN TỨC - SỰ KIỆN</h2>
+                                </div>
+                                <div class="col-sm-auto"><a class="n-link" href="./news.html">Xem chi tiết<i class="fas fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-30 gx-xl-50">
+                            <div class="col-lg-4 wow fadeInRight" data-wow-delay="0.1s">
+                                <div class="news"><a class="news__frame" href="./detail.html"><img src="./images/news-1.jpg" alt="" /></a>
+                                    <div class="news__body">
+                                        <h3 class="news__title"><a href="#!">Chưa thông qua cấp phép vắc xin Nanocovax do thiếu dữ liệu</a></h3>
+                                        <div class="news__info"><span class="me-3">Tin tức</span><span>August 29, 2021</span></div>
+                                        <div class="news__desc">Sáng nay, 29/8, Bộ Y tế họp xem xét cấp phép khẩn cấp vắc xin Nanocovax. Theo thông tin ban đầu, nhóm nghiên cứu được yêu cầu bổ sung...</div><a class="news__link" href="./detail.html">Đọc thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 wow fadeInRight" data-wow-delay="0.2s">
+                                <div class="news"><a class="news__frame" href="./detail.html"><img src="./images/news-1.jpg" alt="" /></a>
+                                    <div class="news__body">
+                                        <h3 class="news__title"><a href="#!">Chưa thông qua cấp phép vắc xin Nanocovax do thiếu dữ liệu</a></h3>
+                                        <div class="news__info"><span class="me-3">Tin tức</span><span>August 29, 2021</span></div>
+                                        <div class="news__desc">Sáng nay, 29/8, Bộ Y tế họp xem xét cấp phép khẩn cấp vắc xin Nanocovax. Theo thông tin ban đầu, nhóm nghiên cứu được yêu cầu bổ sung...</div><a class="news__link" href="./detail.html">Đọc thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 wow fadeInRight" data-wow-delay="0.3s">
+                                <div class="news"><a class="news__frame" href="./detail.html"><img src="./images/news-1.jpg" alt="" /></a>
+                                    <div class="news__body">
+                                        <h3 class="news__title"><a href="#!">Chưa thông qua cấp phép vắc xin Nanocovax do thiếu dữ liệu</a></h3>
+                                        <div class="news__info"><span class="me-3">Tin tức</span><span>August 29, 2021</span></div>
+                                        <div class="news__desc">Sáng nay, 29/8, Bộ Y tế họp xem xét cấp phép khẩn cấp vắc xin Nanocovax. Theo thông tin ban đầu, nhóm nghiên cứu được yêu cầu bổ sung...</div><a class="news__link" href="./detail.html">Đọc thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-2">
+                    <div class="container">
+                        <div class="intro-slider">
+                            <div class="intro-slider__frame wow fadeInRight" data-wow-delay="0.2s"><img src="./images/intro-slide-1.jpg" alt="" /></div>
+                            <div class="intro-slider__content wow fadeInLeft" data-wow-delay="0.2s">
+                                <div class="intro-slider__container swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="intro-slider__subtitle">Giới thiệu tập đoàn</div>
+                                            <div class="intro-slider__title">BIG HOLDING</div>
+                                            <div class="intro-slider__desc">
+                                                <p>Big Holding là doanh nghiệp tư vấn và thực hiện đầu tư vào các lĩnh vực có tầm quan trọng và ảnh hưởng thiết thực đến đời sống xã hội với mục tiêu đem lại sự phát triển phồn vinh cho đất nước, cũng như sự tin tưởng cho các cổ đông, nhà đầu tư.</p>
+                                                <p>Với uy tín nhiều năm trên thị trường, Big Holding được các khách hàng, đối tác nhớ đến là một doanh nghiệp trách nhiệm và đặt chữ tín lên hàng đầu, luôn đảm bảo quyền lợi cao nhất của mỗi cá nhân, tổ chức khi hợp tác và sử dụng dịch vụ của tập đoàn.</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="intro-slider__subtitle">Giới thiệu tập đoàn</div>
+                                            <div class="intro-slider__title">BIG HOLDING</div>
+                                            <div class="intro-slider__desc">
+                                                <p>Big Holding là doanh nghiệp tư vấn và thực hiện đầu tư vào các lĩnh vực có tầm quan trọng và ảnh hưởng thiết thực đến đời sống xã hội với mục tiêu đem lại sự phát triển phồn vinh cho đất nước, cũng như sự tin tưởng cho các cổ đông, nhà đầu tư.</p>
+                                                <p>Với uy tín nhiều năm trên thị trường, Big Holding được các khách hàng, đối tác nhớ đến là một doanh nghiệp trách nhiệm và đặt chữ tín lên hàng đầu, luôn đảm bảo quyền lợi cao nhất của mỗi cá nhân, tổ chức khi hợp tác và sử dụng dịch vụ của tập đoàn.</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="intro-slider__subtitle">Giới thiệu tập đoàn</div>
+                                            <div class="intro-slider__title">BIG HOLDING</div>
+                                            <div class="intro-slider__desc">
+                                                <p>Big Holding là doanh nghiệp tư vấn và thực hiện đầu tư vào các lĩnh vực có tầm quan trọng và ảnh hưởng thiết thực đến đời sống xã hội với mục tiêu đem lại sự phát triển phồn vinh cho đất nước, cũng như sự tin tưởng cho các cổ đông, nhà đầu tư.</p>
+                                                <p>Với uy tín nhiều năm trên thị trường, Big Holding được các khách hàng, đối tác nhớ đến là một doanh nghiệp trách nhiệm và đặt chữ tín lên hàng đầu, luôn đảm bảo quyền lợi cao nhất của mỗi cá nhân, tổ chức khi hợp tác và sử dụng dịch vụ của tập đoàn.</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="intro-slider__subtitle">Giới thiệu tập đoàn</div>
+                                            <div class="intro-slider__title">BIG HOLDING</div>
+                                            <div class="intro-slider__desc">
+                                                <p>Big Holding là doanh nghiệp tư vấn và thực hiện đầu tư vào các lĩnh vực có tầm quan trọng và ảnh hưởng thiết thực đến đời sống xã hội với mục tiêu đem lại sự phát triển phồn vinh cho đất nước, cũng như sự tin tưởng cho các cổ đông, nhà đầu tư.</p>
+                                                <p>Với uy tín nhiều năm trên thị trường, Big Holding được các khách hàng, đối tác nhớ đến là một doanh nghiệp trách nhiệm và đặt chữ tín lên hàng đầu, luôn đảm bảo quyền lợi cao nhất của mỗi cá nhân, tổ chức khi hợp tác và sử dụng dịch vụ của tập đoàn.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="intro-slider__nav">
+                                    <div class="intro-slider__pagination me-auto"></div>
+                                    <div class="intro-slider__prev"><img src="./images/icon-long-arrow-left.png" alt="" /></div>
+                                    <div class="intro-slider__next"><img src="./images/icon-long-arrow-right.png" alt="" /></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-2">
+                    <div class="container">
+                        <div class="row gx-3 gy-4 g-xl-30">
+                            <div class="col-lg-3 col-6">
+                                <div class="h-info"><img class="h-info__icon" src="./images/icon-user-check.png" alt="">
+                                    <div class="h-info__title">Năng Lực Nhân Sự</div>
+                                    <div class="h-info__desc">Tập thể lao động chất lượng cao, kỷ luật đoàn kết, được đào tạo chính quy, bồi dưỡng thường xuyên.</div>
+                                    <div class="mt-auto"><a class="h-info__link" href="#!">Xem Thêm...</a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <div class="h-info"><img class="h-info__icon" src="./images/icon-eye.png" alt="">
+                                    <div class="h-info__title">Tầm Nhìn</div>
+                                    <div class="h-info__desc">Trở thành doanh nghiệp tiên phong trong lĩnh vực Đầu tư tại Việt Nam.</div>
+                                    <div class="mt-auto"><a class="h-info__link" href="#!">Xem Thêm...</a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <div class="h-info"><img class="h-info__icon" src="./images/icon-diamond.png" alt="">
+                                    <div class="h-info__title">Giá Trị Cốt Lõi</div>
+                                    <div class="h-info__desc">Luôn hướng đến giải quyết công việc một cách chất lượng, thể hiển được năng lực và tạo sự đột phá, ghi dấu trong ngành.</div>
+                                    <div class="mt-auto"><a class="h-info__link" href="#!">Xem Thêm...</a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <div class="h-info"><img class="h-info__icon" src="./images/icon-flag.png" alt="">
+                                    <div class="h-info__title">Sứ Mệnh</div>
+                                    <div class="h-info__desc">Đưa đất nước Việt Nam trở nên vĩ đại. Thấu hiểu được những trăn trở của khách hàng khi nghiên cứu đầu tư vào một dự án có giá trị lớn.</div>
+                                    <div class="mt-auto"><a class="h-info__link" href="#!">Xem Thêm...</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-2">
+                    <div class="container">
+                        <div class="section-2__header">
+                            <div class="row g-3">
+                                <div class="col-sm">
+                                    <h2 class="section-2__title mb-20">LĨNH VỰC HOẠT ĐỘNG</h2>
+                                    <div class="section-2__desc mb-0" style="max-width:900px">Với tầm nhìn trở thành doanh nghiệp tiên phong trong lĩnh vực đầu tư tại Việt Nam, Big Holding không ngừng đổi mới, sáng tạo để kiến tạo hệ sinh thái các sản phẩm dịch vụ đẳng cấp, góp phần nâng cao chất lượng cuộc sống của người Việt và nâng tầm vị thế của thương hiệu Việt trên trường quốc tế.</div>
+                                </div>
+                                <div class="col-sm-auto align-self-end"><a class="n-link" href="./projects.html">Xem chi tiết<i class="fas fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-3 g-xl-30 g-xxl-50">
+                            <div class="col-lg-3 col-6">
+                                <div class="card-3"><a class="card-3__frame" href="./detail.html"><img src="./images/card-3-1.jpg" alt=""></a>
+                                    <div class="card-3__body">
+                                        <div class="card-3__title">CÔNG NGHỆ - CÔNG NGHIỆP</div>
+                                    </div><a class="card-3__overlay" href="./detail.html"><img class="card-3__icon" src="./images/icon-tech.png" alt="">
+                                        <div class="card-3__title-2">CÔNG NGHỆ<br>CÔNG NGHIỆP</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <div class="card-3"><a class="card-3__frame" href="./detail.html"><img src="./images/card-3-2.jpg" alt=""></a>
+                                    <div class="card-3__body">
+                                        <div class="card-3__title">THƯƠNG MẠI - DỊCH VỤ</div>
+                                    </div><a class="card-3__overlay" href="./detail.html"><img class="card-3__icon" src="./images/icon-tech.png" alt="">
+                                        <div class="card-3__title-2">CÔNG NGHỆ<br>CÔNG NGHIỆP</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <div class="card-3"><a class="card-3__frame" href="./detail.html"><img src="./images/card-3-3.jpg" alt=""></a>
+                                    <div class="card-3__body">
+                                        <div class="card-3__title">TƯ VẤN ĐẦU TƯ</div>
+                                    </div><a class="card-3__overlay" href="./detail.html"><img class="card-3__icon" src="./images/icon-tech.png" alt="">
+                                        <div class="card-3__title-2">CÔNG NGHỆ<br>CÔNG NGHIỆP</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <div class="card-3"><a class="card-3__frame" href="./detail.html"><img src="./images/card-3-4.jpg" alt=""></a>
+                                    <div class="card-3__body">
+                                        <div class="card-3__title">THIỆN NGUYỆN XÃ HỘI</div>
+                                    </div><a class="card-3__overlay" href="./detail.html"><img class="card-3__icon" src="./images/icon-tech.png" alt="">
+                                        <div class="card-3__title-2">CÔNG NGHỆ<br>CÔNG NGHIỆP</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-2">
+                    <div class="container">
+                        <div class="section-2__header">
+                            <div class="section-2__subtitle">Chất lượng trong mọi công việc</div>
+                            <h2 class="section-2__title">DỰ ÁN TIÊU BIỂU</h2>
+                        </div>
+                        <div class="row g-30 g-xxl-50 align-items-center">
+                            <div class="col-lg-6">
+                                <div class="img-slider">
+                                    <div class="img-slider__container swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="ratio ratio-10x6"><img src="./images/img-slide-1.jpg" alt="" /></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="ratio ratio-10x6"><img src="./images/img-slide-1.jpg" alt="" /></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="ratio ratio-10x6"><img src="./images/img-slide-1.jpg" alt="" /></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="ratio ratio-10x6"><img src="./images/img-slide-1.jpg" alt="" /></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 pl-xxl-40">
+                                <div class="info-slider">
+                                    <div class="info-slider__container swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="info-slider__title">Nhà máy Thực phẩm Quốc tế Thăng Long</div>
+                                                <div class="info-slider__desc">Dược phẩm Quốc tế Thăng Long với gần 10 năm kinh nghiệm hoạt động trong lĩnh vực sản xuất phân phối mỹ phẩm được bào chế từ thảo mộc thiên nhiên và thiết bị y tế. Qua nhiều năm kinh nghiệm trong lĩnh vực kinh doanh đa dạng các loại sản phẩm được phát triển rộng khắp trên cả nước.</div><a class="info-slider__link" href="./detail.html">Xem chi tiết dự án</a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="info-slider__title">Nhà máy Thực phẩm Quốc tế Thăng Long</div>
+                                                <div class="info-slider__desc">Dược phẩm Quốc tế Thăng Long với gần 10 năm kinh nghiệm hoạt động trong lĩnh vực sản xuất phân phối mỹ phẩm được bào chế từ thảo mộc thiên nhiên và thiết bị y tế. Qua nhiều năm kinh nghiệm trong lĩnh vực kinh doanh đa dạng các loại sản phẩm được phát triển rộng khắp trên cả nước.</div><a class="info-slider__link" href="./detail.html">Xem chi tiết dự án</a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="info-slider__title">Nhà máy Thực phẩm Quốc tế Thăng Long</div>
+                                                <div class="info-slider__desc">Dược phẩm Quốc tế Thăng Long với gần 10 năm kinh nghiệm hoạt động trong lĩnh vực sản xuất phân phối mỹ phẩm được bào chế từ thảo mộc thiên nhiên và thiết bị y tế. Qua nhiều năm kinh nghiệm trong lĩnh vực kinh doanh đa dạng các loại sản phẩm được phát triển rộng khắp trên cả nước.</div><a class="info-slider__link" href="./detail.html">Xem chi tiết dự án</a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="info-slider__title">Nhà máy Thực phẩm Quốc tế Thăng Long</div>
+                                                <div class="info-slider__desc">Dược phẩm Quốc tế Thăng Long với gần 10 năm kinh nghiệm hoạt động trong lĩnh vực sản xuất phân phối mỹ phẩm được bào chế từ thảo mộc thiên nhiên và thiết bị y tế. Qua nhiều năm kinh nghiệm trong lĩnh vực kinh doanh đa dạng các loại sản phẩm được phát triển rộng khắp trên cả nước.</div><a class="info-slider__link" href="./detail.html">Xem chi tiết dự án</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="info-slider__nav">
+                                        <div class="info-slider__pagination me-auto"></div>
+                                        <div class="info-slider__prev"><img src="./images/icon-long-arrow-left.png" alt="" /></div>
+                                        <div class="info-slider__next"><img src="./images/icon-long-arrow-right.png" alt="" /></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- footer-->
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 mb-20"><a class="footer__logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                            <ul class="f-contact mt-3 mt-xl-4">
+                                <li class="f-contact__item">
+                                    <div class="row g-3">
+                                        <div class="col-auto"><i class="fas fa-lg fa-fw fa-phone-square text-primary"></i></div>
+                                        <div class="col"><a href="tel:+84981045948">+ 84 981 045 948</a></div>
+                                    </div>
+                                </li>
+                                <li class="f-contact__item">
+                                    <div class="row g-3">
+                                        <div class="col-auto"><i class="fas fa-lg fa-fw fa-envelope text-primary"></i></div>
+                                        <div class="col"><a href="mailto:info@bigholding.vn">info@bigholding.vn</a></div>
+                                    </div>
+                                </li>
+                                <li class="f-contact__item">
+                                    <div class="row g-3">
+                                        <div class="col-auto"><i class="fas fa-lg fa-fw fa-home text-primary"></i></div>
+                                        <div class="col">Lô số 22, tầng 1 tòa R4 Royal City, số 72 Nguyễn Trãi, Phường Thượng Đình, Quận Thanh Xuân, Thành phố Hà Nội, Việt Nam.</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 mb-20">
+                            <form class="subscribe mb-4 mb-xl-40" action="#!">
+                                <h3 class="subscribe__title">Đăng ký nhận tin</h3>
+                                <div class="subscribe__group">
+                                    <div class="input-group">
+                                        <input class="form-control" type="email" placeholder="Email" />
+                                        <button class="input-group-text">Đăng ký</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="row g-3">
+                                <div class="col-6">
+                                    <ul class="f-menu">
+                                        <li><a href="#!">Trang chủ</a></li>
+                                        <li><a href="#!">Giới thiệu tập đoàn</a></li>
+                                        <li><a href="#!">Lĩnh vực hoạt động</a></li>
+                                        <li><a href="#!">Dự án tiêu biểu</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <ul class="f-menu">
+                                        <li><a href="#!">Tin tức sự kiện</a></li>
+                                        <li><a href="#!">Tuyển dụng</a></li>
+                                        <li><a href="#!">Liên hệ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__copyright">© Bản quyền thuộc Big Holding 2022</div>
+                </div>
+            </footer>
+        </div>
+        <!-- modals + sticky widgets-->
+        <button class="btn-movetop" type="button" data-target="body"><i class="fa fa-arrow-up"></i></button>
+    </body>
+</html>

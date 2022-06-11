@@ -1,0 +1,151 @@
+.breadcrumb {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  &-item {
+    &,
+    & + &::before,
+    &.active,
+    &.active::before,
+    a {
+      color: $primary;
+    }
+
+    a {
+      line-height: 1.2;
+      display: inline-block;
+
+      &:hover {
+        border-bottom: 1px solid currentColor;
+        color: $secondary;
+      }
+    }
+  }
+
+  &--white .breadcrumb-item,
+  &--white .breadcrumb-item + .breadcrumb-item::before,
+  &--white .breadcrumb-item + .breadcrumb-item.active,
+  &--white .breadcrumb-item + .breadcrumb-item.active::before,
+  &--white .breadcrumb-item a,
+  &--white .breadcrumb-item a:hover {
+    color: $white;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 16px;
+  }
+}
+
+.pagination {
+  margin-bottom: 0;
+
+  .page-item {
+    &:not(:last-child) {
+      margin-right: 4px;
+    }
+  }
+
+  .page-link {
+    color: $gray-800;
+    background: 0;
+    padding: 0 8px;
+    border: 0 !important;
+    border-radius: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #828282;
+  }
+
+
+
+  .page-item.active,
+  .page-item:hover {
+    .page-link {
+      color: $primary;
+      background: 0;
+    }
+  }
+
+  .page-item.disabled .page-link {
+    color: #828282 !important;
+    background: 0;
+  }
+
+  @include media-breakpoint-up(xl) {
+    .page-link {
+      font-size: 18px;
+    }
+  }
+}
+
+.search {
+  display: none;
+  width: 100%;
+  height: 100%;
+  padding: 16px 0;
+  background-color: $white;
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &.show {
+    display: block;
+  }
+
+  .form-control {
+    border-right: 0;
+    padding-left: 16px;
+
+    &:focus {
+      box-shadow: unset;
+    }
+  }
+
+  .form-control:focus ~ .input-group-text {
+    border-color: $input-focus-border-color;
+  }
+
+  .input-group-text {
+    border-left: 0;
+    border-radius: 0 !important;
+
+    &:not(:last-child) {
+      border-right: 0!important;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .form-control {
+      height: 60px;
+    }
+  }
+
+  @include media-breakpoint-up(xxl) {
+    padding: 20px 0;
+  }
+}
+
+.n-link {
+  font-size: 16px;
+  font-weight: 700;
+  color: $primary;
+  text-transform: uppercase;
+
+  i {
+    transition: 0.4s;
+  }
+
+  &:hover {
+    color: $secondary;
+
+    i {
+      transform: translateX(5px);
+    }
+  }
+
+  @include media-breakpoint-down(xl) {
+    font-size: 14px;
+  }
+}
