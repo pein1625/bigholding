@@ -60,6 +60,15 @@
     }
   }
 
+  &:hover &__frame img {
+    transform: scale(1.1);
+  }
+
+  &:hover &__title,
+  &:hover &__link {
+    color: $secondary;
+  }
+
   @include media-breakpoint-up(xxl) {
     font-size: 16px;
   }
