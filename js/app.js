@@ -212,13 +212,13 @@ $(function () {
 
   const $frame = $('.intro-slider__frame');
 
-  if (!$frame.length || $window.width() < 1200) return;
+  if (!$frame.length || $window.width() < 992) return;
 
   $window.on('scroll', calcPos);
 
   function calcPos() {
 
-    const windowHeight = $window.width();
+    const windowHeight = $window.height();
 
     const scrollTop = $window.scrollTop();
 
